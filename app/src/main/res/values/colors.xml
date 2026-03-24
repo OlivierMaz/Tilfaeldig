@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="background">#0B0F1A</color>
+    <color name="surface">#141A2A</color>
+
+    <!-- Text -->
+    <color name="text_primary">#E6E9FF</color>
+    <color name="text_secondary">#9AA4D1</color>
+
+    <!-- Primary (néon violet) -->
+    <color name="primary">#7C4DFF</color>
+    <color name="opose">#FFB24D</color>
+    <color name="on_primary">#FFFFFF</color>
+
+    <!-- Secondary (cyan sci-fi) -->
+    <color name="secondary">#00E5FF</color>
+    <color name="on_secondary">#001014</color>
+
+    <!-- Rating colors -->
+    <color name="rating_good">#21d07a</color>
+    <color name="rating_medium">#d2d531</color>
+    <color name="rating_bad">#db2360</color>
+
+    <!-- Options card colors -->
+    <color name="background_dark">#0D0D0D</color>
+    <color name="card_dark">#1A1A1A</color>
+    <color name="accent">#00FFC6</color> <!-- sci-fi cyan -->
+    <color name="gray">#AAAAAA</color>
+
+</resources>

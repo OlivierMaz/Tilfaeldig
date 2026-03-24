@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Poster -->
+        <ImageView
+            android:id="@+id/imgPoster"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:contentDescription="Poster du film"/>
+
+        <!-- Rating + Année -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tvImdbRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IMDb : -"
+                android:textColor="#FFF"
+                android:background="#88000000"
+                android:padding="6dp"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/etYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Année : -"
+                android:textColor="#FFF"
+                android:background="#88000000"
+                android:padding="6dp"/>
+
+        </LinearLayout>
+
+        <!-- Titre -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Titre du film"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:layout_marginTop="12dp"/>
+
+        <!-- Résumé -->
+        <TextView
+            android:id="@+id/tvOverview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Résumé du film"
+            android:textColor="#FFF"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Boutons -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+            <Button
+                android:id="@+id/btnRandom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Film aléatoire"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnAddLibrary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/opose"
+                android:textColor="@color/on_secondary"
+                android:text="Ajouter film"
+                android:contentDescription="Ajouter à la bibliothèque"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

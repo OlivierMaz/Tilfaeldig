@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "998951602354",
+    "project_id": "tilfaeldig-1f2c4",
+    "storage_bucket": "tilfaeldig-1f2c4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:998951602354:android:8aad6aea4616e4cfb9a1ab",
+        "android_client_info": {
+          "package_name": "com.example.tilfaeldig"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAp7seXEOLGipq93Uk_ah5tfknUDsMT33o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
