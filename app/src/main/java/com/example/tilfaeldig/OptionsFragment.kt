@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import android.widget.Button
 import android.widget.EditText
 import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
@@ -16,6 +17,7 @@ class OptionsFragment : Fragment(R.layout.fragment_options) {
     private lateinit var spinnerOrigin: Spinner
     private lateinit var spinnerType: Spinner
     private lateinit var etYear: EditText
+    private lateinit var btnReset: Button
 
     private val genres = mapOf(
         "Tous" to null,
@@ -60,6 +62,7 @@ class OptionsFragment : Fragment(R.layout.fragment_options) {
         spinnerOrigin = view.findViewById(R.id.spinnerOrigin)
         spinnerType = view.findViewById(R.id.spinnerType)
         etYear = view.findViewById(R.id.etYear)
+        btnReset = view.findViewById(R.id.btnReset)
 
         // remplir les spinners
         spinnerGenre.adapter = ArrayAdapter(
@@ -79,6 +82,15 @@ class OptionsFragment : Fragment(R.layout.fragment_options) {
             android.R.layout.simple_spinner_dropdown_item,
             types
         )
+
+        btnReset.setOnClickListener({ v ->
+
+            spinnerGenre.setSelection(0)
+            spinnerType.setSelection(0)
+            spinnerOrigin.setSelection(0)
+
+            etYear.text.clear()
+        })
 
         // charger valeurs sauvegardées
         loadSavedFilters()
